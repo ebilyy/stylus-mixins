@@ -1,0 +1,36 @@
+
+r($width)
+    @media only screen and (max-width: width px)
+        {block}
+rmin($width)
+    @media only screen and (min-width: $width px)
+        {block}
+rh($height)
+    @media only screen and (max-height: $height px)
+        {block}
+cover()
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: 50% 50%
+vcenter()
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%,-50%)
+
+clr()
+    &:after
+        content: " "
+        display: table
+        clear: both
+
+placeholder-color($color)
+    &::placeholder
+        color: $color
+
+placeholder()
+    &::placeholder
+        {block}
+
+
+
